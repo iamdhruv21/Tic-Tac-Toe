@@ -6,37 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlays.css">
 </head>
 <body>
-    <header>
+
+    <aside id="backdrop"></aside>
+
+    <header id="main-header">
         <h1>Play Tic, Tac, Toe</h1>
         <p>Built with HTML, CSS, JavaScript and - of course - lot of love</p>
     </header>
-    <main>
-        <aside id="backdrop"></aside>
 
+    <main>
         <aside id="module">
             <h2>Choose your name</h2>
-            <form action="">
+            <form>
                 <div>
                     <label for="player-name">Player name</label>
                     <input type="text" name="username" id="player-name" >
                 </div>
                 <div>
-                    <button type="button">Cancel</button>
-                    <button type="reset">Confirm</button>
+                    <button type="button" class="btn btn-alt">Cancel</button>
+                    <button type="reset" class="btn">Confirm</button>
                 </div>
             </form>
         </aside>
 
         <section id="game-configuration">
+            
             <ol>
                 <li>
                     <article>
                         <h2>Player 1</h2>
                         <h3>Player name</h3>
                         <p>X</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -44,12 +48,12 @@
                         <h2>Player 2</h2>
                         <h3>Player name</h3>
                         <p>O</p>
-                        <button>Edit</button>
+                        <button class="btn btn-alt">Edit</button>
                     </article>
                 </li>
             </ol>
 
-            <button>Start New Game</button>
+            <button class="btn">Start New Game</button>
         </section>
 
         <section id="active-game">
