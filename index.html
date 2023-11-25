@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="overlays.css">
-    <link rel="stylesheet" href="configuration.css">
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/overlays.css">
+    <link rel="stylesheet" href="Style/configuration.css">
+    <link rel="stylesheet" href="Style/game.css">
 </head>
 <body>
 
@@ -28,8 +28,8 @@
                     <input type="text" name="username" id="player-name" >
                 </div>
                 <div>
-                    <button type="button" class="btn btn-alt">Cancel</button>
-                    <button type="reset" class="btn">Confirm</button>
+                    <button type="button" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                    <button type="reset" class="btn" id="confirm-config-btn">Confirm</button>
                 </div>
             </form>
         </aside>
@@ -42,7 +42,7 @@
                         <h2>Player 1</h2>
                         <h3>Player name</h3>
                         <p class="player-symbol">X</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
                     </article>
                 </li>
                 <li>
@@ -50,7 +50,7 @@
                         <h2>Player 2</h2>
                         <h3>Player name</h3>
                         <p class="player-symbol">O</p>
-                        <button class="btn btn-alt">Edit</button>
+                        <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
                     </article>
                 </li>
             </ol>
@@ -79,5 +79,9 @@
             </ol>
         </section>
     </main>
+
+    <script src="Script/config.js"></script>
+    <script src="Script/game.js"></script>
+    <script src="Script/app.js"></script>
 </body>
 </html>
