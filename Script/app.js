@@ -1,5 +1,13 @@
 let editedPlayer = 0;
 let activePlayer = 0;
+let currentRound = 1;
+let gameIsOver = false;
+
+const gameData = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+];
 
 const players = [
     {
@@ -21,11 +29,12 @@ const formElement = document.querySelector('form');
 const erorElement = document.getElementById('config-error');
 const gameArea = document.getElementById('active-game')
 const activePlayerName = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
 
 const configOverlayCacelBtn = document.getElementById('cancel-config-btn');
 const startGameBtn = document.getElementById('start-game-btn');
 const gameFieldElements = document.querySelectorAll('#game-board li');
-// const gameBoard = document.getElementById('game-board');
+const gameBoard = document.getElementById('game-board');
 
 editPlayer1Btn.addEventListener('click', openPlayerConfig);
 editPlayer2Btn.addEventListener('click', openPlayerConfig);
