@@ -106,7 +106,8 @@ function endGame(winnerId) {
     gameOverElement.style.display = 'block';
 
     if(winnerId > 0) {
-        gameOverElement.firstElementChild.firstElementChild.textContent = players[winnerId - 1].name;
+        gameOverElement.firstElementChild.firstElementChild.firstElementChild.textContent = players[winnerId - 1].name;
+        console.log(gameOverElement.firstElementChild.firstElementChild.firstElementChild);
     }
     else {
         gameOverElement.firstElementChild.textContent = 'it\'s a Draw!';
